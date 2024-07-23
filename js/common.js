@@ -27,4 +27,14 @@ $(".ham").click(function () {
   });
 
 
+
+
+
+
+
+
+
+  AOS.init();
+
+
 });//끝
