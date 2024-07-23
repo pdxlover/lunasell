@@ -164,11 +164,11 @@ header .logo a img {
     display: block;
     padding: 7px 15px;
     border-bottom: 2px solid #FF782C;
-    width: 30%;
+    width: 40%;
     color: #FF782C;
     margin: 20px 0;
     font-weight: bold;
-    text-align: center;
+    white-space: nowrap;
 }
 
 .main_con .main_03_wrap .txt_box .bold_txt {
