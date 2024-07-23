@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+/*모바일_360*/
+#wrap {
+    min-width: 320px
+}
+
+header {
+    position: relative;
+}
+
+header .h_inner {
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 110px;
+    height: 40px;
+}
+
+header .logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.gnb {
+    display: none;
+}
+
+.ham {
+    width: 25px;
+    height: 17.5px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.ham img {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+    /*햄버거버튼 좌우반전*/
+}
+
+/*
+.dim{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+    */
+.mgnb_wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #8A847E;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 99;
+    padding: 40px 20px;
+}
+
+.mgnb_wrap .mgnb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mgnb_wrap .mgnb li a {
+    display: block;
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+
+}
+
+.mgnb_close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.mgnb_close img {
+    width: 100%;
+    height: 100%;
+}
+
+#content .main_visual {
+    width: 100%;
+    height: 550px;
+    font-size: 0;
+    color: transparent;
+    background: url(../img/main_visual.png) no-repeat center / cover;
+}
+
+
+/*컨텐츠 시작*/
+.main_con {
+    padding: 40px 20px;
+}
+
+.main_con .con_wrap {
+    padding: 20px 0;
+}
+
+.main_con .con_wrap .img_box {
+    width: 100%;
+    height: 350px;
+    font-size: 0;
+    color: transparent;
+}
+
+.main_con .main_01_wrap .main_01_img {
+    background: url(../img/img_main_01.png) no-repeat center / cover;
+}
+
+.main_con .main_02_wrap .main_02_img {
+    background: url(../img/con_02_bg.png) no-repeat center / cover;
+}
+
+.main_con .main_03_wrap .main_03_img {
+    background: url(../img/img_main_03.png) no-repeat center / cover;
+}
+
+.main_con .main_04_wrap .main_04_img {
+    background: url(../img/img_main_04.png) no-repeat center / cover;
+}
+
+.main_con .con_wrap .txt_box {
+    margin-top: 20px;
+}
+
+.main_con .con_wrap .txt_box .sub_menu {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #c8c8c8;
+}
+
+.main_con .con_wrap .txt_box h2 {
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.main_con .con_wrap .txt_box p {
+    line-height: 1.5;
+}
+
+.main_con .con_wrap .txt_box a {
+    display: block;
+    padding: 7px 15px;
+    border-bottom: 2px solid #FF782C;
+    width: 30%;
+    color: #FF782C;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main_con .main_03_wrap .txt_box .bold_txt {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.main_con .main_04_wrap p {
+    display: flex;
+    gap: 5px;
+}
+
+.main_con .main_04_wrap .txt_box p:first-child {
+    font-weight: bold;
+}
+
+.top_btn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 9;
+}
+
+.top_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*footer영역 시작*/
+footer{
+    background-color: #333;
+    padding: 40px 20px;
+}
+footer .f_logo{
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+footer .f_logo img{
+    width: 100%;
+    height: 100%;
+}
+footer .footer_info{
+    text-align: center;
+}
+footer .footer_info p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+}
+footer .footer_info p:last-child{
+    margin-bottom: 0;
+}
+
+footer .f_sns{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+footer .f_sns ul{
+    display: flex;
+    justify-content: center;
+}
+footer .f_sns li{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+footer .f_sns li a img{
+    width: 100%;
+    height: 100%;
+}
+footer .f_sns li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+/*모바일 가로,타블렛 세로_600*/
+@media screen and (min-width:600px) {
+    .main_con .con_wrap .img_box {
+        height: 500px;
+    }
+}
+
+/*타블렛 가로,노트북_800*/
+@media screen and (min-width:800px) {
+    .main_con .con_wrap {
+        display: flex;
+    }
+
+    .main_con .con_wrap .img_box {
+        width: 50%;
+    }
+
+    .main_con .con_wrap .txt_box {
+        width: 50%;
+        margin-top: 0;
+        padding: 40px;
+        position: relative;
+    }
+
+    .main_con .main_02_wrap .main_02_img,
+    .main_con .main_04_wrap .main_04_img {
+        order: 2;
+    }
+
+    .main_con .main_02_wrap .product_txt,
+    .main_con .main_04_wrap .product_txt {
+        order: 1;
+    }
+
+    .main_con .con_wrap .txt_box h2 {
+        margin: 20px 0 20px 0;
+    }
+
+    .main_con .con_wrap .txt_box a {
+        position: absolute;
+        bottom: 10%;
+        right: 20px;
+
+    }
+
+
+    footer .footer_flex_wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .f_logo{
+        display: block;
+        width: 110px;
+        height: 40px;
+        margin: 0;
+    }
+    footer .f_sns{
+        margin-top: 0;
+        margin-left: 0;
+    }
+ 
+}
+
+/*노트북_1200*/
+@media screen and (min-width:1200px) {
+
+    .inner {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    header .h_inner {
+        height: 80px;
+    }
+
+    header .logo {
+        width: 120px;
+        height: 45px;
+    }
+
+    .gnb {
+        display: flex;
+        gap: 20px;
+    }
+
+    .gnb li a {
+        padding: 0 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    #content .main_visual {
+        height: 100vh;
+    }
+
+    .main_con .con_wrap {
+        display: flex;
+        padding: 60px 0 0 0;
+    }
+
+    .main_con .con_wrap .img_box {
+        width: 80%;
+        height: 500px;
+    }
+
+    .main_con .con_wrap .txt_box {
+        margin-top: 0;
+        padding: 40px;
+        position: relative;
+    }
+
+    .main_con .con_wrap .txt_box h2 {
+        margin: 80px 0 20px 0;
+    }
+
+    .main_con .con_wrap .txt_box a {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        margin: 0;
+        border-bottom: 0;
+        text-align: left;
+    }
+
+
+    .main_con .con_wrap .txt_box a:after {
+        display: block;
+        content: "";
+        border-bottom: solid 2px #FF782C;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        margin: 5px 0;
+    }
+
+    .main_con .con_wrap .txt_box a:hover:after {
+        transform: scaleX(1);
+    }
+    .main_con .con_wrap .txt_box a.fromleft:after{  transform-origin:  0% 50%; }
+
+
+
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
