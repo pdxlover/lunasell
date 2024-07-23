@@ -108,12 +108,10 @@ header .logo a img {
 
 
 /*컨텐츠 시작*/
-.main_con {
-    padding: 40px 20px;
-}
 
-.main_con .con_wrap {
-    padding: 20px 0;
+
+.main_con .txt_box {
+    padding: 20px 20px;
 }
 
 .main_con .con_wrap .img_box {
@@ -137,6 +135,9 @@ header .logo a img {
 
 .main_con .main_04_wrap .main_04_img {
     background: url(../img/img_main_04.png) no-repeat center / cover;
+}
+.main_con .con_wrap:nth-child(2n){
+    background-color: #fff8f1;
 }
 
 .main_con .con_wrap .txt_box {
@@ -261,23 +262,13 @@ footer .f_sns li:last-child{
 
 /*타블렛 가로,노트북_800*/
 @media screen and (min-width:800px) {
-    .main_con {
-        padding: 60px 20px;
-    }
+
     .main_con .con_wrap {
-        display: flex;
-        padding: 30px 0;
+        padding: 60px 0;
     }
 
     .main_con .con_wrap .img_box {
-        width: 50%;
-    }
-
-    .main_con .con_wrap .txt_box {
-        width: 50%;
-        margin-top: 0;
-        padding: 40px;
-        position: relative;
+        width: 90%;
     }
 
     .main_con .main_02_wrap .main_02_img,
@@ -289,6 +280,17 @@ footer .f_sns li:last-child{
     .main_con .main_04_wrap .product_txt {
         order: 1;
     }
+    .main_con .con_wrap .txt_box{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main_con .con_wrap .txt_box .txt_info_wrap{
+        width: 60%;
+    }
+    .main_con .con_wrap .txt_box .more_btn_wrap{
+        width: 20%;
+    }
 
     .main_con .con_wrap .txt_box h2 {
         margin: 20px 0 20px 0;
@@ -298,6 +300,8 @@ footer .f_sns li:last-child{
         position: absolute;
         bottom: 10%;
         right: 20px;
+        width: auto;
+        margin: 0;
 
     }
 
@@ -358,11 +362,25 @@ footer .f_sns li:last-child{
     .main_con .con_wrap {
         padding: 60px 0;
     }
-
-    .main_con .con_wrap .img_box {
-        width: 80%;
-        height: 500px;
+    .main_con .con_wrap .img_txt_flex_wrap{
+        display: flex;
     }
+    .main_con .con_wrap .txt_box{
+        width: 100%;
+        display: block;
+
+    }
+    .main_con .con_wrap .txt_box .txt_info_wrap{
+        width: auto;
+    }
+    .main_con .con_wrap .txt_box .more_btn_wrap{
+        width: auto;
+    } 
+    .main_con .con_wrap .img_box{
+        width: 100%;
+    }
+
+
 
     .main_con .con_wrap .txt_box {
         margin-top: 0;
