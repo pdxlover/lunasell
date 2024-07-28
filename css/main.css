@@ -11,7 +11,7 @@
     opacity: 0.7;
     cursor: pointer;
     display: none;
-    z-index: 99;
+    z-index: 999;
 }
 #wrap {
     min-width: 320px
@@ -28,7 +28,7 @@ header .h_inner {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 888;
     display: flex;
     justify-content: space-between;
 }
@@ -204,7 +204,8 @@ header .logo a img {
 .top_btn{
     width: 70px;
     height: 70px;
-    background-color: #FF782C;
+    background-color:#fff;
+    border: 2px solid #FF782C;
     border-radius: 50%;
     position: fixed;
     bottom: 10%;
@@ -214,7 +215,7 @@ header .logo a img {
 
 .top_btn a{
     display: block;
-    color: #fff;
+    color: #FF782C;
     font-weight: bold;
     text-align: center;
     line-height: 70px;
@@ -246,11 +247,31 @@ footer .footer_info p{
     color: #fff;
     margin-bottom: 10px;
     font-size: 0.7em;
+    font-weight: bold;
 }
 footer .footer_info p:last-child{
     margin-bottom: 0;
 }
-
+footer .f_warning{
+    color:rgba(255, 255, 255, 0.7);
+    width: 80%;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+footer .f_warning p{
+    margin-bottom: 10px;
+}
+footer .f_warning span{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+footer .footer_flex_wrap::after{
+    content: "";
+    display: block;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
 footer .f_sns{
     margin-top: 20px;
     margin-left: 20px;
@@ -330,11 +351,15 @@ footer .f_sns li:last-child{
 
     }
 
-
+ 
+}
+/*footer*/
+@media screen and (min-width:1080px){
     footer .footer_flex_wrap{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        padding-bottom: 20px;
     }
     footer .f_logo{
         display: block;
@@ -346,7 +371,22 @@ footer .f_sns li:last-child{
         margin-top: 0;
         margin-left: 0;
     }
- 
+    footer .f_warning{
+        margin: 0;
+        width: auto;
+        text-align: left;
+    }
+    footer .footer_flex_wrap::after{
+        display: none;
+    }
+    footer .f_border::after{
+        content: "";
+        display: block;
+        border: 0.5px solid rgba(255, 255, 255, 0.3);
+        margin: 20px 0;
+    }
+
+
 }
 
 /*노트북_1200*/
@@ -441,7 +481,6 @@ footer .f_sns li:last-child{
         transform: scaleX(1);
     }
     .main_con .con_wrap .txt_box a.fromleft:after{  transform-origin:  0% 50%; }
-
 
 
 
