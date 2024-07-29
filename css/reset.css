@@ -31,3 +31,6 @@ img{
 input,select{
     vertical-align: top;
 }
+button{
+    border: none;
+}

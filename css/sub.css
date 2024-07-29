@@ -387,6 +387,9 @@
 
 .product_flex_wrap .product .product_txt .product_txt_left span {
     font-size: 1.4em;
+    display: block;
+    margin-bottom: 5px;
+    color: #FF782C;
 }
 
 .product_flex_wrap .product .product_txt .product_txt_left p {
@@ -488,13 +491,16 @@
     padding: 20px;
 }
 
-.modal .modal_right>div {
-    margin-bottom: 20px;
+.modal .modal_right .modal_num {
+    margin: 5px 0 20px 0;
+    font-size: 1.2em;
+    color: #847D76;
 }
 
 .modal .modal_right .modal_sub_tit {
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: #FF782C;
+    margin-bottom: 20px;
 }
 
 .modal .modal_right .modal_tit {
@@ -607,13 +613,215 @@
 /*FAQ_sub_03 끝*/
 
 /*-----------------------------------------------------------*/
-/*contant_sub_04 시작*/
+/*contact_sub_04 시작*/
 .sub_header.contact_head {
     background: url(../img/sub_04_head_img_m.png) no-repeat center / cover;
 }
 
 
-/*contant_sub_04 끝*/
+
+/*컨택페이지_라디오버튼*/
+#contact_content {
+    padding: 40px 20px;
+}
+
+.input_box {
+    margin-bottom: 40px;
+}
+
+.input_box label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.input_box label span {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input_box input[type="text"] {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #FF782C;
+
+}
+
+.input_box input[type="text"]:focus {
+    outline: none;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+
+.radio_box {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 40px;
+}
+
+/* 기본 라디오 버튼 숨기기 */
+.radio_btn input[type="radio"] {
+    display: none;
+}
+
+/* 선택되지 않은 라디오 버튼 스타일 꾸미기 */
+.on {
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 선택된 라디오 버튼 스타일 꾸미기 */
+.radio_box input[type="radio"]:checked+.on {
+    background: #ddd;
+}
+
+.on:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio_box input[type="radio"]:checked+.on:after {
+    display: block;
+}
+
+.on:after {
+    width: 10px;
+    height: 10px;
+    background: #FF782C;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+/*내용입력 상자 커스텀*/
+.input_con input[type="text"] {
+    width: 100%;
+    height: 250px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border-bottom: 0;
+}
+
+.input_con input[type="text"]:focus {
+    background-color: #fff;
+    border: 1px solid #FF782C;
+}
+
+/*첨부파일 상자 커스텀*/
+.input_attach .attach_box {
+    width: 100%;
+    height: 250px;
+    border: 2px dashed #eeeeee;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input_attach .attach_box .attach_box_con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input_attach .attach_box .attach_box_con input[type="file"] {
+    display: none;
+}
+
+.input_attach .attach_box .attach_box_con .upload_btn {
+    padding: 2px 20px;
+    color: #BABABA;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #BABABA;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.input_attach .attach_box .attach_box_con .upload_btn:hover {
+    background-color: #BABABA;
+    color: #fff;
+}
+
+.input_attach .attach_box .attach_box_con p {
+    text-align: center;
+    font-size: 1.6em;
+    color: #BABABA;
+    font-weight: bold;
+}
+
+.input_attach .attach_box .attach_box_con .drag {
+    margin-top: 20px;
+    display: block;
+}
+
+.input_attach .attach_box .attach_box_con .or {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.input_attach .attach_box .icon_upload {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.input_attach .attach_box .icon_upload img {
+    width: 100%;
+    height: 100%;
+}
+
+.input_attach .max_upload {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #847D76;
+    text-align: right;
+}
+
+.send_btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #FF782C;
+    color: #FF782C;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.6em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+.send_btn:hover {
+    background-color: #FF782C;
+    color: #fff;
+}
+
+/*contact_sub_04 끝*/
 
 /*모바일 가로,타블렛 세로_600*/
 @media screen and (min-width:600px) {
@@ -653,10 +861,6 @@
 
     .sub_con_wrap .sub_con_02_tit {
         font-size: 3.0em;
-    }
-
-    .modal .modal_right .modal_tit {
-        font-size: 2.5em;
     }
 
     .sub_con_wrap .sub_txt_box .sub_txt_tit span:first-child {
@@ -700,14 +904,6 @@
         width: 20%;
         height: auto;
         margin: 0 auto;
-    }
-
-    .modal .modal_right .modal_con_flex_wrap .modal_con_tit {
-        font-size: 2.0em;
-    }
-
-    .modal .modal_right .modal_con_flex_wrap .modal_con_txt p {
-        font-size: 2.0em;
     }
 
     .faq_con_box {
@@ -908,19 +1104,6 @@
         margin-bottom: 20px;
     }
 
-    .modal .modal_right .modal_tit {
-        font-size: 3.0em;
-    }
-
-    .modal .modal_right .modal_con_flex_wrap .modal_con_tit {
-        font-size: 2.5em;
-    }
-
-    .modal .modal_right .modal_con_flex_wrap .modal_con_txt p {
-        font-size: 2.5em;
-    }
-
-
     /*-----------------------------------------------------------*/
     /*FAQ_sub_03 시작*/
     .sub_header.faq_head {
@@ -964,100 +1147,108 @@
 
     /*contant_sub_04 끝*/
 
-}
-
-/*모달팝업_1080*/
-@media screen and (min-width:1080px) {
-
-    /*모달팝업 시작*/
-    .modal {
-        width: 60%;
-        height: 80%;
-    }
-
-    .modal .modal_flex {
+    .top_input_wrap {
         display: flex;
-    }
-
-    .modal .modal_left {
-        width: 50%;
-        height: 600px;
-    }
-
-    .modal .modal_left img {
-        max-width: 100%;
-        height: auto;
-
+        flex-wrap: wrap;
 
     }
 
-    .modal .modal_right {
-        width: 50%;
-        padding: 40px;
+    .top_input_wrap>div {
+        width: calc((100% - 60px) / 2);
+        margin-right: 60px;
+
     }
-
-    .modal .modal_right>div {
-        margin-bottom: 0;
-    }
-
-    .modal .modal_right .modal_con_txt_flex {
-        display: block;
-    }
-
-    .modal .modal_right .modal_tit {
-        font-size: 2.5em;
-        margin-bottom: 30px;
-    }
-
-    .modal .modal_right .modal_con_flex_wrap .modal_con_tit {
-        font-size: 1.8em;
-    }
-
-    .modal .modal_right .modal_con_flex_wrap .modal_con_txt p {
-        font-size: 1.8em;
-    }
-
-}
-
-/*노트북_1200*/
-@media screen and (min-width:1200px) {
-    .sub_header .head_txt h2 {
-        font-size: 4.0em;
-    }
-
-    .sub_con_wrap .sub_img_box {
-        height: 450px;
-    }
-
-    .sub_con_wrap .sub_txt_box {
-        height: 300px;
-    }
-
-    .sub_con_wrap .sub_txt_box .percent {
-        font-size: 9.0em;
-    }
-
-    .product_flex_wrap .product {
-        margin-right: 40px;
-        width: calc((100% - 80px) / 3);
-    }
-
-    .product_flex_wrap .product:nth-child(2n) {
-        margin-right: 40px;
-    }
-
-    .product_flex_wrap .product:nth-child(3n) {
+    .top_input_wrap > div:nth-child(2n){
         margin-right: 0;
     }
+    .send_btn {
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+    }
+    /*모달팝업_1080*/
+    @media screen and (min-width:1080px) {
+
+        /*모달팝업 시작*/
+        .modal {
+            width: 60%;
+            height: 80%;
+        }
+
+        .modal .modal_flex {
+            display: flex;
+        }
+
+        .modal .modal_left {
+            width: 50%;
+            height: 600px;
+        }
+
+        .modal .modal_left img {
+            max-width: 100%;
+            height: auto;
 
 
-    .modal {
-        width: 60%;
-        height: 60%;
+        }
+
+        .modal .modal_right {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .modal .modal_right>div {
+            margin-bottom: 0;
+        }
+
+        .modal .modal_right .modal_con_txt_flex {
+            display: block;
+        }
+
+        .modal .modal_right .modal_con_flex_wrap .modal_con_txt p {
+            font-size: 1.8em;
+        }
+
     }
 
-    .modal .modal_left {
-        height: 500px;
-    }
+    /*노트북_1200*/
+    @media screen and (min-width:1200px) {
+        .sub_header .head_txt h2 {
+            font-size: 4.0em;
+        }
 
-}
+        .sub_con_wrap .sub_img_box {
+            height: 450px;
+        }
+
+        .sub_con_wrap .sub_txt_box {
+            height: 300px;
+        }
+
+        .sub_con_wrap .sub_txt_box .percent {
+            font-size: 9.0em;
+        }
+
+        .product_flex_wrap .product {
+            margin-right: 40px;
+            width: calc((100% - 80px) / 3);
+        }
+
+        .product_flex_wrap .product:nth-child(2n) {
+            margin-right: 40px;
+        }
+
+        .product_flex_wrap .product:nth-child(3n) {
+            margin-right: 0;
+        }
+
+
+        .modal {
+            width: 60%;
+            height: 60%;
+        }
+
+        .modal .modal_left {
+            height: 500px;
+        }
+
+    }

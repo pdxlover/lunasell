@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,50 +17,154 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
-        <header>
-            <div class="h_inner">
-                <h1 class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="로고"></a>
-                </h1>
-                <nav>
-                    <ul class="gnb">
-                        <li><a href="sub01.html" s>About Lunasell</a></li>
-                        <li><a href="sub02.html">Product</a></li>
-                        <li><a href="sub03.html">FAQ</a></li>
-                        <li><a href="sub04.html">Contact</a></li>
-                    </ul><!--.gnb-->
-
-                    <div class="ham">
-                        <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
-                    </div><!--.ham-->
-
-                    <!--<div class="dim"></div><.dim-->
-
-                    <div class="mgnb_wrap">
-                        <ul class="mgnb">
-                            <li><a href="sub01.html">About Lunasell</a></li>
+        <form action="#">
+            <header>
+                <div class="h_inner">
+                    <h1 class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="로고"></a>
+                    </h1>
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="sub01.html" s>About Lunasell</a></li>
                             <li><a href="sub02.html">Product</a></li>
                             <li><a href="sub03.html">FAQ</a></li>
                             <li><a href="sub04.html">Contact</a></li>
-                        </ul><!--.mgnb-->
+                        </ul><!--.gnb-->
 
-                        <div class="mgnb_close">
-                            <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
-                        </div><!--.mgnb_close-->
-                    </div><!--.mgnb_wrap-->
-                </nav>
-            </div><!--.inner-->
-        </header>
+                        <div class="ham">
+                            <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
+                        </div><!--.ham-->
+
+                        <!--<div class="dim"></div><.dim-->
+
+                        <div class="mgnb_wrap">
+                            <ul class="mgnb">
+                                <li><a href="sub01.html">About Lunasell</a></li>
+                                <li><a href="sub02.html">Product</a></li>
+                                <li><a href="sub03.html">FAQ</a></li>
+                                <li><a href="sub04.html">Contact</a></li>
+                            </ul><!--.mgnb-->
+
+                            <div class="mgnb_close">
+                                <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
+                            </div><!--.mgnb_close-->
+                        </div><!--.mgnb_wrap-->
+                    </nav>
+                </div><!--.inner-->
+            </header>
+
+            <div class="sub_header contact_head">
+                <div class="head_txt">
+                    <h2>CONTACT</h2>
+                    <p>루나셀에 대한 문의사항이 있으면 메시지를 남겨주세요</p>
+                </div><!--head_txt-->
+            </div><!--sub_header-->
+
+            <div id="contact_content">
+                <div class="inner">
+                    <div class="top_input_wrap">
+                        <div class="input_box input_name">
+                            <label for="input_name"><span>성함</span>Name</label>
+                            <input type="text" placeholder="성함을 입력하세요" id="input_name">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_c_name">
+                            <label for="input_c_name"><span>상호</span>Company Name</label>
+                            <input type="text" placeholder="회사명을 입력하세요" id="input_c_name">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_ph">
+                            <label for="input_ph"><span>연락처</span>Phone Number</label>
+                            <input type="text" placeholder="연락처를 입력하세요" id="input_ph">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_mail">
+                            <label for="input_mail"><span>이메일</span>Email Address</label>
+                            <input type="text" placeholder="메일주소를 입력하세요" id="input_mail">
+                        </div><!--.input_box input_name-->
+                    </div><!--.top_input_wrap-->
+                    <div class="radio_btn">
+                        <label for="clinic" class="radio_box">
+                            <input type="radio" id="clinic" name="input_check" value="병원" checked="checked" />
+                            <span class="on"></span>
+                            병원
+                        </label>
+                        <label for="dealer" class="radio_box">
+                            <input type="radio" id="dealer" name="input_check" value="딜러" />
+                            <span class="on"></span>
+                            딜러
+                        </label>
+                    </div><!--.radio_btn-->
+                    <div class="btm_input_wrap">
+                        <div class="input_box input_tit">
+                            <label for="input_tit"><span>제목</span>Title</label>
+                            <input type="text" placeholder="제목을 입력하세요" id="input_tit">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_con">
+                            <label for="input_con"><span>세부 문의사항</span>Contents</label>
+                            <input type="text" placeholder="내용을 입력하세요" id="input_con">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_attach">
+                            <label for="input_attach"><span>명함 또는 사업자등록증 첨부</span>Attachment</label>
+                            <div class="attach_box">
+                                <div class="attach_box_con">
+                                    <div class="icon_upload">
+                                        <img src="img/icon_upload.png" alt="업로드 아이콘">
+                                    </div>
+                                    <p class="drag">Drag and Drop File</p>
+                                    <p class="or">or</p>
+                                    <input type="file" accept=".jpg,.png,.pdf" placeholder="버튼" value="첨부파일" id="input_con">
+                                    <label for="file"><button class="upload_btn">파일 업로드</button></label>
+                                </div>
+                            </div>
+                            <div class="max_upload">첨부파일(최대3MB)</div>
+                        </div><!--.input_attach-->
+                    </div><!--.btm_input_wrap-->
+
+                    <button class="send_btn">Send</button>
+                </div><!--.inner-->
+            </div><!--content-->
+            <div class="top_btn">
+                <a href="#">TOP</a>
+            </div><!--.top_btn-->
+        </form>
     </div><!--#wrap-->
+    <footer>
+        <div class="f_border">
+            <div class="inner">
+                <div class="footer_flex_wrap">
+                    <a href="#" class="f_logo"><img src="img/logo.png" alt="루나셀로고"></a>
+                    <div class="footer_info">
+                        <p>GOLDEN MEDI 서울특별시 서초구 강남대로 341,8층</p>
+                        <p>TEL. 02-6959-5961</p>
+                        <p>&copy;Copyrights 2024 Lunacell. All Right Reserved.</p>
+                    </div>
+                    <div class="f_warning">
+                        <p>허가받은 품목명:기타비흡수성복합사</p>
+                        <p>사용목적:인체의 치료및 자극을 위해
+                            인체에 삽입하는 금사(金絲)로써, 일회용 주시침을
+                            포함한다.</p>
+                        <p>광고심의필:심의번호:00000-000-00-0000(유효기간YY.MM.DD)</p>
+                        <span>※ 이 제품은 ‘의료기기’이며, ‘사용 상의 주의사항’과
+                            ‘사용방법’을 잘 읽고 사용하십시오.</span>
+                    </div>
+                </div>
+            </div><!--.inner-->
+        </div><!--.f_border-->
+        <div class="inner">
+            <div class="f_sns">
+                <ul>
+                    <li><a href="https://www.instagram.com/lunacell.official/" target="_blank">
+                            <img src="img/icon_insta.png" alt="인스타그램">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="img/icon_blog.png" alt="채팅">
+                        </a></li>
+                </ul>
+            </div>
+        </div><!--.inner-->
+    </footer>
 
-    <div class="sub_header contact_head">
-        <div class="head_txt">
-            <h2>CONTACT</h2>
-            <p>루나셀에 대한 문의사항이 있으면 메시지를 남겨주세요</p>
-        </div><!--head_txt-->
-    </div><!--sub_header-->
-    
 </body>
+
 </html>
