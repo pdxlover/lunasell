@@ -720,6 +720,7 @@
     background-color: #eeeeee;
     border-radius: 5px;
     border-bottom: 0;
+
 }
 
 .input_con input[type="text"]:focus {
@@ -1158,97 +1159,101 @@
         margin-right: 60px;
 
     }
-    .top_input_wrap > div:nth-child(2n){
+
+    .top_input_wrap>div:nth-child(2n) {
         margin-right: 0;
     }
+
     .send_btn {
         width: 30%;
         margin: 0 auto;
         display: block;
     }
-    /*모달팝업_1080*/
-    @media screen and (min-width:1080px) {
+}
 
-        /*모달팝업 시작*/
-        .modal {
-            width: 60%;
-            height: 80%;
-        }
+/*모달팝업_1080*/
+@media screen and (min-width:1080px) {
 
-        .modal .modal_flex {
-            display: flex;
-        }
+    /*모달팝업 시작*/
+    .modal {
+        width: 60%;
+        height: 80%;
+    }
 
-        .modal .modal_left {
-            width: 50%;
-            height: 600px;
-        }
+    .modal .modal_flex {
+        display: flex;
+    }
 
-        .modal .modal_left img {
-            max-width: 100%;
-            height: auto;
+    .modal .modal_left {
+        width: 50%;
+        height: 600px;
+    }
 
+    .modal .modal_left img {
+        max-width: 100%;
+        height: auto;
 
-        }
-
-        .modal .modal_right {
-            width: 50%;
-            padding: 40px;
-        }
-
-        .modal .modal_right>div {
-            margin-bottom: 0;
-        }
-
-        .modal .modal_right .modal_con_txt_flex {
-            display: block;
-        }
-
-        .modal .modal_right .modal_con_flex_wrap .modal_con_txt p {
-            font-size: 1.8em;
-        }
 
     }
 
-    /*노트북_1200*/
-    @media screen and (min-width:1200px) {
-        .sub_header .head_txt h2 {
-            font-size: 4.0em;
-        }
-
-        .sub_con_wrap .sub_img_box {
-            height: 450px;
-        }
-
-        .sub_con_wrap .sub_txt_box {
-            height: 300px;
-        }
-
-        .sub_con_wrap .sub_txt_box .percent {
-            font-size: 9.0em;
-        }
-
-        .product_flex_wrap .product {
-            margin-right: 40px;
-            width: calc((100% - 80px) / 3);
-        }
-
-        .product_flex_wrap .product:nth-child(2n) {
-            margin-right: 40px;
-        }
-
-        .product_flex_wrap .product:nth-child(3n) {
-            margin-right: 0;
-        }
-
-
-        .modal {
-            width: 60%;
-            height: 60%;
-        }
-
-        .modal .modal_left {
-            height: 500px;
-        }
-
+    .modal .modal_right {
+        width: 50%;
+        padding: 40px;
     }
+
+    .modal .modal_right>div {
+        margin-bottom: 0;
+    }
+
+    .modal .modal_right .modal_con_txt_flex {
+        display: block;
+    }
+
+    .modal .modal_right .modal_con_flex_wrap .modal_con_txt p {
+        font-size: 1.8em;
+    }
+
+}
+
+/*노트북_1200*/
+@media screen and (min-width:1200px) {
+    .sub_header .head_txt h2 {
+        font-size: 4.0em;
+    }
+
+    .sub_con_wrap .sub_img_box {
+        height: 450px;
+    }
+
+    .sub_con_wrap .sub_txt_box {
+        height: 300px;
+    }
+
+    .sub_con_wrap .sub_txt_box .percent {
+        font-size: 9.0em;
+    }
+
+    .product_flex_wrap .product {
+        margin-right: 40px;
+        width: calc((100% - 80px) / 3);
+    }
+
+    .product_flex_wrap .product:nth-child(2n) {
+        margin-right: 40px;
+    }
+
+    .product_flex_wrap .product:nth-child(3n) {
+        margin-right: 0;
+    }
+
+
+    .modal {
+        width: 60%;
+        height: 60%;
+    }
+
+    .modal .modal_left {
+        height: 500px;
+    }
+
+}
