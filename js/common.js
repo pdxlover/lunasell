@@ -1,4 +1,11 @@
+
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
+export default App;
+
 $(document).ready(function () {//시작
+  
 
   //모바일 메뉴 열고 닫기
   $(".ham").click(function () {
@@ -84,40 +91,98 @@ $(document).ready(function () {//시작
 
 
 
-
   //입력폼 메일 전송
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
+
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
     event.preventDefault();
-    var form = event.target;
-    var formData = new FormData(form);
-    fetch(form.action, {
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
       method: form.method,
-      body: formData,
+      body: data,
       headers: {
-        'Accept': 'application/json'
+          'Accept': 'application/json'
       }
-    }).then(function (response) {
+    }).then(response => {
       if (response.ok) {
-        form.reset();
-        document.querySelector('.success-message').style.display = 'block';
-        document.querySelector('.error-message').style.display = 'none';
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
       } else {
-        response.json().then(function (data) {
+        response.json().then(data => {
           if (Object.hasOwn(data, 'errors')) {
-            document.querySelector('.error-message').innerHTML = data["errors"].map(error => error["message"]).join(", ");
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
           } else {
-            document.querySelector('.error-message').innerHTML = "Oops! There was a problem submitting your form";
+            status.innerHTML = "Oops! There was a problem submitting your form"
           }
-          document.querySelector('.error-message').style.display = 'block';
-          document.querySelector('.success-message').style.display = 'none';
         })
       }
-    }).catch(function (error) {
-      document.querySelector('.error-message').innerHTML = "Oops! There was a problem submitting your form";
-      document.querySelector('.error-message').style.display = 'block';
-      document.querySelector('.success-message').style.display = 'none';
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
     });
-  });
+  }
+  form.addEventListener("submit", handleSubmit)
+
+
+
+
+  // Make sure to run npm install @formspree/react
+// For more help visit https://formspr.ee/react-help
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("mgvwkyke");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
+
+function App() {
+  return (
+    <ContactForm />
+  );
+}
+
+
+
+
+
+
+
+
+
+  
+
+
 
 
 

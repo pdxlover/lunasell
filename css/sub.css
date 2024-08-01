@@ -647,12 +647,12 @@
     padding: 10px;
     border: none;
     border-bottom: 1px solid #FF782C;
-
+    font-size: 1.6em;
 }
 
 .input_box input[type="text"]:focus {
     outline: none;
-    background-color: #eeeeee;
+    background-color: antiquewhite;
     border-radius: 5px;
 }
 
@@ -717,15 +717,14 @@
 .input_con input[type="text"] {
     width: 100%;
     height: 250px;
-    background-color: #eeeeee;
+    border: 1px solid #FF782C;
     border-radius: 5px;
-    border-bottom: 0;
-
+    
 }
 
 .input_con input[type="text"]:focus {
-    background-color: #fff;
-    border: 1px solid #FF782C;
+    background-color: antiquewhite;
+    border: 0;
 }
 
 /*첨부파일 상자 커스텀*/
@@ -742,57 +741,56 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.input_attach .attach_box .attach_box_con input[type="file"] {
-    display: none;
-}
-
-.input_attach .attach_box .attach_box_con .upload_btn {
-    padding: 2px 20px;
-    color: #BABABA;
-    text-align: center;
-    line-height: 35px;
-    border: 1px solid #BABABA;
-    border-radius: 20px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-.input_attach .attach_box .attach_box_con .upload_btn:hover {
-    background-color: #BABABA;
-    color: #fff;
-}
-
-.input_attach .attach_box .attach_box_con p {
-    text-align: center;
-    font-size: 1.6em;
-    color: #BABABA;
-    font-weight: bold;
-}
-
-.input_attach .attach_box .attach_box_con .drag {
-    margin-top: 20px;
     display: block;
 }
 
-.input_attach .attach_box .attach_box_con .or {
-    margin-bottom: 20px;
-    display: block;
-}
-
-.input_attach .attach_box .icon_upload {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
+.file_input_textbox {
+    height: 35px;
+    border: 0;
+    border-bottom: 1px solid #BABABA;
     margin-bottom: 10px;
+    color: #BABABA;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
 }
 
-.input_attach .attach_box .icon_upload img {
+.file_input_div {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 35px;
+    overflow: hidden;
+}
+
+.file_input_button {
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    border: 0;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    color:#fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #847D76;
+    cursor: pointer;
+}
+
+
+.file_input_hidden {
+    font-size: 45px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
 }
 
 .input_attach .max_upload {

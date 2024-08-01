@@ -20,9 +20,8 @@
 
 <body>
     <div id="wrap">
-        <form name="contact-form" id="contact-form" 
-        action="https://formspree.io/f/xldrbjwn"  method="POST"
-        enctype='multipart/form-data' class="contact-form-style-01">
+        <form name="contact-form" id="my-form" action="https://formspree.io/f/mgvwkyke" method="POST"
+            enctype='multipart/form-data' class="contact-form-style-01">
             <header>
                 <div class="h_inner">
                     <h1 class="logo">
@@ -110,23 +109,21 @@
                             <label for="input_attach"><span>명함 또는 사업자등록증 첨부</span>Attachment</label>
                             <div class="attach_box">
                                 <div class="attach_box_con">
-                                    <div class="icon_upload">
-                                        <img src="img/icon_upload.png" alt="업로드 아이콘">
-                                    </div>
-                                    <p class="drag">Drag and Drop File</p>
-                                    <p class="or">or</p>
-                                    <input type="file" name="첨부파일" accept=".jpg,.png,.pdf" value="첨부파일" id="search_file">
-                                    <label for="search_file" class="upload_btn">파일 업로드</label>
+                                    <input id="fileName" class="file_input_textbox" readonly="readonly">
+                                    <div class="file_input_div">
+                                        <input type="button" value="Search files" class="file_input_button">
+                                        <input type="file" class="file_input_hidden" 
+                                        onchange="javascript: document.getElementById('fileName').value
+                                         = this.value.split('/').pop().split('\\').pop()">
+                                    </div><!--.file_input_div-->
                                 </div>
-                            </div>
+                            </div><!--.attach_box-->
                             <div class="max_upload">첨부파일(최대3MB)</div>
                         </div><!--.input_attach-->
                     </div><!--.btm_input_wrap-->
 
-                    <div class="success-message">Thank you! Your message has been sent.</div>
-                <div class="error-message">Oops! There was an error sending your message.</div>
-
-                    <button class="send_btn" type="submit" name="submit">Send</button>
+                    <button class="send_btn" type="submit" name="submit" id="my-form-button">Send</button>
+                    <p id="my-form-status"></p>
 
                 </div><!--.inner-->
             </div><!--content-->
