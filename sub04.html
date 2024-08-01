@@ -68,24 +68,7 @@
 
             <div id="contact_content">
                 <div class="inner">
-                    <div class="top_input_wrap">
-                        <div class="input_box input_name">
-                            <label for="input_name"><span>성함</span>Name</label>
-                            <input type="text" name="성함" placeholder="성함을 입력하세요" id="input_name">
-                        </div><!--.input_box input_name-->
-                        <div class="input_box input_c_name">
-                            <label for="input_c_name"><span>상호</span>Company Name</label>
-                            <input type="text" name="상호" placeholder="회사명을 입력하세요" id="input_c_name">
-                        </div><!--.input_box input_name-->
-                        <div class="input_box input_ph">
-                            <label for="input_ph"><span>연락처</span>Phone Number</label>
-                            <input type="text" name="연락처" placeholder="연락처를 입력하세요" id="input_ph">
-                        </div><!--.input_box input_name-->
-                        <div class="input_box input_mail">
-                            <label for="input_mail"><span>이메일</span>Email Address</label>
-                            <input type="text" name="메일" placeholder="메일주소를 입력하세요" id="input_mail">
-                        </div><!--.input_box input_name-->
-                    </div><!--.top_input_wrap-->
+
                     <div class="radio_btn">
                         <label for="clinic" class="radio_box">
                             <input type="radio" id="clinic" name="구분" value="병원" checked="checked" />
@@ -97,12 +80,37 @@
                             <span class="on"></span>
                             딜러
                         </label>
+                        <label for="etc" class="radio_box">
+                            <input type="radio" id="etc" name="구분" value="기타" />
+                            <span class="on"></span>
+                            기타
+                        </label>
                     </div><!--.radio_btn-->
-                    <div class="btm_input_wrap">
-                        <div class="input_box input_tit">
-                            <label for="input_tit"><span>제목</span>Title</label>
-                            <input type="text" name="제목" placeholder="제목을 입력하세요" id="input_tit">
+
+                    <div class="top_input_wrap">
+                        <div class="input_box input_name">
+                            <label for="input_name"><span>상호</span>Company Name</label>
+                            <input type="text" name="성함" placeholder="회사명을 입력하세요" id="input_name">
                         </div><!--.input_box input_name-->
+                        <div class="input_box input_c_name">
+                            <label for="input_c_name"><span>직위</span>Job Title</label>
+                            <input type="text" name="상호" placeholder="직위를 입력하세요" id="input_c_name">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_ph">
+                            <label for="input_ph"><span>성함</span>Name</label>
+                            <input type="text" name="연락처" placeholder="성함을 입력하세요" id="input_ph">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_mail">
+                            <label for="input_mail"><span>연락처</span>Phone Number</label>
+                            <input type="text" name="메일" placeholder="연락처를 입력하세요" id="input_mail">
+                        </div><!--.input_box input_name-->
+                        <div class="input_box input_tit">
+                            <label for="input_tit"><span>이메일</span>Email Address</label>
+                            <input type="text" name="제목" placeholder="이메일주소를 입력하세요" id="input_tit">
+                        </div><!--.input_box input_name-->
+                    </div><!--.top_input_wrap-->
+                
+                    <div class="btm_input_wrap">
                         <div class="input_box input_con">
                             <label for="input_con"><span>세부 문의사항</span>Contents</label>
                             <input type="text" name="문의사항" placeholder="내용을 입력하세요" id="input_con">
