@@ -82,13 +82,18 @@ function ContactForm() {
 
   form.addEventListener("submit", handleSubmit)
 
-  //세부사항 엔터키 제출 방지
+
+  //엔터방지 코드
   const inputCon = document.getElementById("input_con");
 
-    inputCon.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            alert("엔터 키로 제출되지 않습니다.");
-        }
-    });
+  inputCon.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+          event.preventDefault();
+          alert("엔터 키로 제출되지 않습니다.");
+      }
+  });
+
+
+
+ 
 

@@ -111,10 +111,12 @@
                     </div><!--.top_input_wrap-->
                 
                     <div class="btm_input_wrap">
-                        <div class="input_box input_con">
-                            <label for="input_con"><span>세부 문의사항</span>Contents</label>
-                            <input type="text" name="문의사항" placeholder="내용을 입력하세요" id="input_con">
-                        </div><!--.input_box input_name-->
+                        <div class="btm_input_wrap">
+                            <div class="input_box input_con">
+                                <label for="input_con"><span>세부 문의사항</span>Contents</label>
+                                <textarea name="문의사항" placeholder="내용을 입력하세요" id="input_con"></textarea>
+                            </div>
+                            <!--.input_box input_name-->
                         <div class="input_box input_attach">
                             <label for="input_attach"><span>명함 또는 사업자등록증 첨부</span>Attachment</label>
                             <div class="attach_box">
@@ -128,7 +130,7 @@
                                     </div><!--.file_input_div-->
                                 </div>
                             </div><!--.attach_box-->
-                            <div class="max_upload">첨부파일(최대3MB)</div>
+                            <!-- <div class="max_upload">첨부파일(최대3MB)</div> -->
                         </div><!--.input_attach-->
                     </div><!--.btm_input_wrap-->
 
@@ -177,6 +179,20 @@
             </div>
         </div><!--.inner-->
     </footer>
+
+<!--텍스트에어리어 안에서만 엔터먹히게-->
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
+
 
 </body>
 
