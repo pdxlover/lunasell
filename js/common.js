@@ -19,17 +19,6 @@ $(document).ready(function () {//시작
   });//모바일 메뉴 열고 닫기 끝
 
 
-  //top btn 스크롤감지
-  $(function () {
-    $(".top_btn").hide();//처음에는 탑버튼 숨기기
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) { $(".top_btn").fadeIn(); }
-
-      else { $(".top_btn").fadeOut(); }
-    });
-  });
-
-
 
   //상품 모달팝업 시작
 
@@ -84,6 +73,18 @@ $(document).ready(function () {//시작
   for (var j = 0; j < btns.length; j++) {
     funcs[j]();
   }
+
+
+
+    //top btn 스크롤감지
+    $(function () {
+      $(".top_btn").hide();//처음에는 탑버튼 숨기기
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) { $(".top_btn").fadeIn(); }
+  
+        else { $(".top_btn").fadeOut(); }
+      });
+    });
 
 
 

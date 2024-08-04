@@ -648,12 +648,17 @@
     border: none;
     border-bottom: 1px solid #FF782C;
     font-size: 1.6em;
+    font-family: 'S-CoreDream-3Light';
 }
 
 .input_box input[type="text"]:focus {
     outline: none;
     background-color: antiquewhite;
     border-radius: 5px;
+}
+.input_box input::placeholder{
+    color: #c4bbb1;
+    font-size: 0.8em;
 }
 
 
@@ -718,14 +723,18 @@
     border: 1px solid #FF782C;
     border-radius: 5px;
     padding: 10px;
+    font-family: 'S-CoreDream-3Light';
     font-size: 1.6em;
-    
 }
 
 .input_con textarea:focus {
     background-color: antiquewhite;
     border: 0;
     outline:none;
+}
+.input_box textarea::placeholder{
+    color: #c4bbb1;
+    font-size: 0.8em;
 }
 
 /*첨부파일 상자 커스텀*/
