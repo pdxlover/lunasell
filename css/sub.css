@@ -1185,7 +1185,7 @@
     /*모달팝업 시작*/
     .modal {
         width: 60%;
-        height: 80%;
+        height: 60%;
     }
 
     .modal .modal_flex {
@@ -1194,12 +1194,12 @@
 
     .modal .modal_left {
         width: 50%;
-        height: 600px;
+        height: auto;
     }
 
     .modal .modal_left img {
         max-width: 100%;
-        height: auto;
+        height: 100%;
 
 
     }
@@ -1256,8 +1256,9 @@
 
 
     .modal {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
+        overflow-y: auto;
     }
 
 }
