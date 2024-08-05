@@ -127,9 +127,9 @@ header .logo a img {
 /*컨텐츠 시작*/
 
 
-.main_con .txt_box {
+/* .main_con .txt_box {
     padding: 20px 20px;
-}
+} */
 
 .main_con .con_wrap .img_box {
     width: 100%;
@@ -155,6 +155,9 @@ header .logo a img {
 }
 .main_con .con_wrap:nth-child(2n){
     background-color: #fff8f1;
+}
+.main_con .img_txt_flex_wrap{
+    padding: 40px;
 }
 
 .main_con .con_wrap .txt_box {
@@ -305,15 +308,15 @@ footer .f_sns li:last-child{
 
 /*타블렛 가로,노트북_800*/
 @media screen and (min-width:800px) {
+    header .logo{
+        width:150px;
+        height: 50px;
+    }
     .mgnb_wrap .mgnb li a{
         font-size: 3.0em;
     }
     #content .main_visual{
         height: 700px;
-    }
-
-    .main_con .con_wrap {
-        padding: 60px 0;
     }
 
     .main_con .con_wrap .img_box {
@@ -334,6 +337,7 @@ footer .f_sns li:last-child{
         display: flex;
         justify-content: space-between;
     }
+    
     .main_con .con_wrap .txt_box .txt_info_wrap{
         width: 60%;
     }
@@ -406,7 +410,7 @@ footer .f_sns li:last-child{
 
     header .logo {
         width: 160px;
-        height: 65px;
+        height: 60px;
     }
 
     .gnb {
