@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*모바일_360*/
-#gray_layer{
+#gray_layer {
     width: 100%;
     height: 100%;
     background-color: #000;
@@ -13,6 +13,7 @@
     display: none;
     z-index: 999;
 }
+
 #wrap {
     min-width: 320px
 }
@@ -62,14 +63,12 @@ header .logo a img {
     transform: scaleX(-1);
     /*햄버거버튼 좌우반전*/
 }
-
-/*
-.dim{
+.thank_ham img{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    transform: scaleX(1);
 }
-    */
+
 .mgnb_wrap {
     width: 100%;
     height: 100%;
@@ -117,7 +116,8 @@ header .logo a img {
     font-size: 0;
     color: transparent;
 }
-#content .main_visual video{
+
+#content .main_visual video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -125,11 +125,6 @@ header .logo a img {
 
 
 /*컨텐츠 시작*/
-
-
-/* .main_con .txt_box {
-    padding: 20px 20px;
-} */
 
 .main_con .con_wrap .img_box {
     width: 100%;
@@ -153,10 +148,12 @@ header .logo a img {
 .main_con .main_04_wrap .main_04_img {
     background: url(../img/img_main_04.png) no-repeat center / cover;
 }
-.main_con .con_wrap:nth-child(2n){
+
+.main_con .con_wrap:nth-child(2n) {
     background-color: #fff8f1;
 }
-.main_con .img_txt_flex_wrap{
+
+.main_con .img_txt_flex_wrap {
     padding: 40px 20px;
 }
 
@@ -208,16 +205,77 @@ header .logo a img {
     font-weight: bold;
 }
 
-.top_btn a{
+/*thank you page 시작*/
+#thank_content {
+    padding: 150px 20px 50px;
+    background-color:#FFF8F5;
+}
+
+#thank_content .icon_mail {
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#thank_content .icon_mail img {
+    width: 100%;
+    height: 100%;
+}
+
+#thank_content .thankyou_ms {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #847D76;
+}
+
+#thank_content p {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    color: #847D76;
+}
+
+#thank_content .back_home {
+    width: 150px;
+    height: 35px;
+    border-radius: 30px;
+    color: #fff;
+    margin: 50px auto;
+    display: block;
+    cursor: pointer;
+    background: #847D76 url(../img/icon_next.png) no-repeat center right / auto 24px;
+}
+#thank_content .thank_border{
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 30px;
+
+} 
+
+#thank_content .thankyou_logo {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#thank_content .thankyou_logo img {
+    width: 49%;
+    height: auto;
+}
+
+.top_btn a {
     width: 60px;
     height: 60px;
-    background-color:#FF782C;
+    background-color: #FF782C;
     position: fixed;
     bottom: 10%;
     right: 5%;
     z-index: 9;
 }
-.top_btn a img{
+
+.top_btn a img {
     width: 100%;
     height: 100%;
 }
@@ -225,71 +283,85 @@ header .logo a img {
 
 
 /*footer영역 시작*/
-footer{
+footer {
     background-color: #333;
     padding: 40px 20px;
 }
-footer .f_logo{
+
+footer .f_logo {
     display: block;
     width: 150px;
     height: auto;
     margin: 0 auto 20px;
 }
-footer .f_logo img{
+
+footer .f_logo img {
     width: 100%;
     height: 100%;
 }
-footer .footer_info{
+
+footer .footer_info {
     text-align: center;
     font-size: 1.6em;
 }
-footer .footer_info p{
+
+footer .footer_info p {
     color: #fff;
     margin-bottom: 10px;
     font-size: 0.7em;
     font-weight: bold;
 }
-footer .footer_info p:last-child{
+
+footer .footer_info p:last-child {
     margin-bottom: 0;
 }
-footer .f_warning{
-    color:rgba(255, 255, 255, 0.7);
+
+footer .f_warning {
+    color: rgba(255, 255, 255, 0.7);
     width: 80%;
     margin: 20px auto 40px;
     text-align: center;
 }
-footer .f_warning p{
+
+footer .f_warning p {
     margin-bottom: 10px;
 }
-footer .f_warning span{
+
+footer .f_warning span {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
-footer .footer_flex_wrap::after{
+
+footer .footer_flex_wrap::after {
     content: "";
     display: block;
     border: 0.5px solid rgba(255, 255, 255, 0.3);
     margin: 20px 0;
 }
-footer .f_sns{
+
+footer .f_sns {
     margin-top: 20px;
     margin-left: 20px;
 }
-footer .f_sns ul{
+
+footer .f_sns ul {
     display: flex;
     justify-content: center;
 }
-footer .f_sns li{
+
+footer .f_sns li {
     width: 40px;
     height: 40px;
     margin-right: 20px;
 }
-footer .f_sns li a img{
+
+footer .f_sns li a img {
     width: 100%;
     height: 100%;
 }
-footer .f_sns li:last-child{
+
+footer .f_sns li:last-child {
     margin-right: 0;
 }
 
@@ -301,21 +373,33 @@ footer .f_sns li:last-child{
     .main_con .con_wrap .img_box {
         height: 500px;
     }
-    .mgnb_wrap .mgnb li a{
+
+    .mgnb_wrap .mgnb li a {
         font-size: 2.5em;
+    }
+
+    #thank_content .icon_mail {
+        width: 15%;
+
+    }
+
+    #thank_content .thankyou_ms {
+        font-size: 3.0em;
     }
 }
 
 /*타블렛 가로,노트북_800*/
 @media screen and (min-width:800px) {
-    header .logo{
-        width:150px;
+    header .logo {
+        width: 150px;
         height: 50px;
     }
-    .mgnb_wrap .mgnb li a{
+
+    .mgnb_wrap .mgnb li a {
         font-size: 3.0em;
     }
-    #content .main_visual{
+
+    #content .main_visual {
         height: 700px;
     }
 
@@ -332,16 +416,18 @@ footer .f_sns li:last-child{
     .main_con .main_04_wrap .product_txt {
         order: 1;
     }
-    .main_con .con_wrap .txt_box{
+
+    .main_con .con_wrap .txt_box {
         width: 90%;
         display: flex;
         justify-content: space-between;
     }
-    
-    .main_con .con_wrap .txt_box .txt_info_wrap{
+
+    .main_con .con_wrap .txt_box .txt_info_wrap {
         width: 60%;
     }
-    .main_con .con_wrap .txt_box .more_btn_wrap{
+
+    .main_con .con_wrap .txt_box .more_btn_wrap {
         width: 20%;
     }
 
@@ -358,39 +444,57 @@ footer .f_sns li:last-child{
 
     }
 
- 
+    #thank_content .thankyou_ms {
+        font-size: 3.5em;
+    }
+
+    #thank_content .thankyou_logo {
+        width: 30%;
+    }
+
+
 }
+
 /*footer*/
-@media screen and (min-width:1080px){
-    footer .footer_flex_wrap{
+@media screen and (min-width:1080px) {
+    footer .footer_flex_wrap {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding-bottom: 20px;
     }
-    footer .f_logo{
+
+    footer .f_logo {
         display: block;
         width: 110px;
         height: 40px;
         margin: 0;
     }
-    footer .f_sns{
+
+    footer .f_sns {
         margin-top: 0;
         margin-left: 0;
     }
-    footer .f_warning{
+
+    footer .f_warning {
         margin: 0;
         width: auto;
         text-align: left;
     }
-    footer .footer_flex_wrap::after{
+
+    footer .footer_flex_wrap::after {
         display: none;
     }
-    footer .f_border::after{
+
+    footer .f_border::after {
         content: "";
         display: block;
         border: 0.5px solid rgba(255, 255, 255, 0.3);
         margin: 20px 0;
+    }
+
+    #thank_content .thankyou_ms {
+        font-size: 4.0em;
     }
 
 
@@ -425,6 +529,10 @@ footer .f_sns li:last-child{
         font-size: 1.8em;
     }
 
+    .thank_gnb li a {
+        color: #333;
+    }
+
     .ham {
         display: none;
     }
@@ -432,24 +540,30 @@ footer .f_sns li:last-child{
     #content .main_visual {
         height: 100vh;
     }
+
     .main_con .con_wrap {
         padding: 60px 0;
     }
-    .main_con .con_wrap .img_txt_flex_wrap{
+
+    .main_con .con_wrap .img_txt_flex_wrap {
         display: flex;
     }
-    .main_con .con_wrap .txt_box{
+
+    .main_con .con_wrap .txt_box {
         width: 100%;
         display: block;
 
     }
-    .main_con .con_wrap .txt_box .txt_info_wrap{
+
+    .main_con .con_wrap .txt_box .txt_info_wrap {
         width: auto;
     }
-    .main_con .con_wrap .txt_box .more_btn_wrap{
+
+    .main_con .con_wrap .txt_box .more_btn_wrap {
         width: auto;
-    } 
-    .main_con .con_wrap .img_box{
+    }
+
+    .main_con .con_wrap .img_box {
         width: 100%;
     }
 
@@ -488,12 +602,19 @@ footer .f_sns li:last-child{
     .main_con .con_wrap .txt_box a:hover:after {
         transform: scaleX(1);
     }
-    .main_con .con_wrap .txt_box a.fromleft:after{  transform-origin:  0% 50%; }
+
+    .main_con .con_wrap .txt_box a.fromleft:after {
+        transform-origin: 0% 50%;
+    }
+
+    #thank_content .icon_mail {
+        width: 10%;
+    }
 
 
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
