@@ -975,7 +975,6 @@
     .sub_con_04 .license_right .license_img_wrap {
         width: 100%;
         display: flex;
-        gap: 10px;
     }
 
     .sub_con_04 .license_img_wrap .license {
