@@ -311,6 +311,9 @@ footer .footer_info p {
     font-size: 0.7em;
     font-weight: bold;
 }
+footer .footer_info .call{
+    color: #fff;
+}
 
 footer .footer_info p:last-child {
     margin-bottom: 0;
