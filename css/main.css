@@ -311,10 +311,12 @@ footer .footer_info p {
     font-size: 0.7em;
     font-weight: bold;
 }
-footer .footer_info .call{
+footer .footer_info p a{
     color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.0em;
+    font-weight: bold;
 }
-
 footer .footer_info p:last-child {
     margin-bottom: 0;
 }
