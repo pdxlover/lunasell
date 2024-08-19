@@ -33,10 +33,10 @@
                     </h1>
                     <nav>
                         <ul class="gnb">
-                            <li class="drop-in-underline"><a href="sub01.html" s>About Lunasell</a></li>
-                            <li class="drop-in-underline"><a href="sub02.html">Product</a></li>
-                            <li class="drop-in-underline"><a href="sub03.html">FAQ</a></li>
-                            <li class="drop-in-underline"><a href="sub04.html">Contact</a></li>
+                            <li class="drop-in-underline"><a href="about.html" s>About Lunasell</a></li>
+                            <li class="drop-in-underline"><a href="product.html">Product</a></li>
+                            <li class="drop-in-underline"><a href="faq.html">FAQ</a></li>
+                            <li class="drop-in-underline"><a href="contact.html">Contact</a></li>
                         </ul><!--.gnb-->
 
                         <div class="ham">
@@ -47,10 +47,10 @@
 
                         <div class="mgnb_wrap">
                             <ul class="mgnb">
-                                <li><a href="sub01.html">About Lunasell</a></li>
-                                <li><a href="sub02.html">Product</a></li>
-                                <li><a href="sub03.html">FAQ</a></li>
-                                <li><a href="sub04.html">Contact</a></li>
+                                <li><a href="about.html">About Lunasell</a></li>
+                                <li><a href="product.html">Product</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul><!--.mgnb-->
 
                             <div class="mgnb_close">
@@ -99,12 +99,12 @@
                             <input type="text" name="직위" placeholder="ex&#41; 원장, 실장" id="input_c_name">
                         </div><!--.input_box input_name-->
                         <div class="input_box input_ph">
-                            <label for="input_ph"><span>성함</span>Name</label>
-                            <input type="text" name="성함" placeholder="ex&#41; 김루나" id="input_ph">
+                            <label for="input_ph"><span>성함</span>Name <span class="require" aria-label="required">*</span></label>
+                            <input type="text" name="성함" placeholder="ex&#41; 김루나" id="input_ph" required>
                         </div><!--.input_box input_name-->
                         <div class="input_box input_mail">
-                            <label for="input_mail"><span>연락처</span>Phone Number</label>
-                            <input type="text" name="연락처" placeholder="ex&#41; 010-" id="input_mail">
+                            <label for="input_mail"><span>연락처</span>Phone Number <span class="require" aria-label="required">*</span></label>
+                            <input type="text" name="연락처" placeholder="ex&#41; 010-" id="input_mail" required>
                         </div><!--.input_box input_name-->
                         <div class="input_box input_tit">
                             <label for="input_tit"><span>이메일</span>Email Address</label>
@@ -125,7 +125,7 @@
                                 <div class="attach_box_con">
                                     <input id="fileName" class="file_input_textbox" readonly="readonly">
                                     <div class="file_input_div">
-                                        <input type="button" value="Search files" class="file_input_button">
+                                        <input type="button" value="파일찾기" class="file_input_button">
                                         <input type="file" class="file_input_hidden" name="upload" accept="image/png, image/jpeg"
                                         onchange="updateFileName(this)">
                                     </div>
@@ -135,7 +135,7 @@
                         </div><!--.input_attach-->
                     </div><!--.btm_input_wrap-->
 
-                    <button class="send_btn" type="submit" name="submit" id="my-form-button">Send</button>
+                    <button class="send_btn" type="submit" name="submit" id="my-form-button">문의하기</button>
                     <p id="my-form-status"></p>
 
                 </div><!--.inner-->
@@ -152,7 +152,9 @@
                     <a href="#" class="f_logo"><img src="img/logo.png" alt="루나셀로고"></a>
                     <div class="footer_info">
                         <p>GOLDEN MEDI 서울특별시 서초구 강남대로 341,8층</p>
-                        <p><a href="tel:02-6959-5961">TEL. 02-6959-5961</a></p>
+                        <p><a href="tel:02-6959-5961">TEL. 02-6959-5961</a>
+                            <a href="mailto:lunacell@gdmedi.co.kr">EMAIL. lunacell@gdmedi.co.kr</a>
+                        </p>
                         <p>&copy;Copyrights 2024 Lunacell. All Right Reserved.</p>
                     </div>
                     <div class="f_warning">
@@ -160,7 +162,7 @@
                         <p>사용목적:인체의 치료및 자극을 위해
                             인체에 삽입하는 금사(金絲)로써, 일회용 주시침을
                             포함한다.</p>
-                        <p>광고심의필:심의번호:00000-000-00-0000(유효기간YY.MM.DD)</p>
+                        <p>광고심의필:심의번호:42024-I10-30-2663(유효기간2027-07-29)</p>
                         <span>※ 이 제품은 ‘의료기기’이며, ‘사용 상의 주의사항’과
                             ‘사용방법’을 잘 읽고 사용하십시오.</span>
                     </div>
@@ -170,7 +172,7 @@
         <div class="inner">
             <div class="f_sns">
                 <ul>
-                    <li><a href="https://www.instagram.com/lunacell.official/" target="_blank">
+                    <li><a href="https://www.instagram.com/lunacell.official/:443" target="_blank">
                             <img src="img/icon_insta.png" alt="인스타그램">
                         </a></li>
                     <li><a href="#">
